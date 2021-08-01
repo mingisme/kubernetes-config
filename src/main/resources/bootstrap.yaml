@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: kube-config
+  cloud:
+    kubernates:
+      config:
+        sources:
+          - name: other
+          - name: ${spring.application.name}
