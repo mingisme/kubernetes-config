@@ -7,3 +7,11 @@ spring:
         sources:
           - name: other
           - name: ${spring.application.name}
+management:
+  security:
+    enabled: false
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
